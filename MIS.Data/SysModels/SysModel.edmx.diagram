@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0bf0fef5f8e745e6be353de70b832877" Name="Diagram1">
+        <EntityTypeShape EntityType="SysManageModel.Application" Width="1.5" PointX="0.875" PointY="0.5" />
+        <EntityTypeShape EntityType="SysManageModel.EmployeeDepartment" Width="1.5" PointX="4.375" PointY="0.5" />
+        <EntityTypeShape EntityType="SysManageModel.EmployeeStatusTbl" Width="1.5" PointX="4.375" PointY="3.125" />
+        <EntityTypeShape EntityType="SysManageModel.EmployeeType" Width="1.5" PointX="6" PointY="0.5" />
+        <EntityTypeShape EntityType="SysManageModel.Menu" Width="1.5" PointX="11.125" PointY="0.5" />
+        <EntityTypeShape EntityType="SysManageModel.Role" Width="1.5" PointX="7.625" PointY="0.5" />
+        <EntityTypeShape EntityType="SysManageModel.RoleAcessTbl" Width="1.5" PointX="9.375" PointY="0.5" />
+        <EntityTypeShape EntityType="SysManageModel.UserAccessTbl" Width="1.5" PointX="0.875" PointY="3.25" />
+        <EntityTypeShape EntityType="SysManageModel.UserAccessType" Width="1.5" PointX="0.875" PointY="5.625" />
+        <EntityTypeShape EntityType="SysManageModel.Employee" Width="1.5" PointX="2.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SysManageModel.APIRequestLog" Width="1.5" PointX="7.625" PointY="3" />
+        <EntityTypeShape EntityType="SysManageModel.ErrorLog" Width="1.5" PointX="7.625" PointY="4.875" />
+        <EntityTypeShape EntityType="SysManageModel.BrowsingLog" Width="1.5" PointX="11.125" PointY="3.875" />
+        <EntityTypeShape EntityType="SysManageModel.EmployeeLocation" Width="1.5" PointX="4.375" PointY="5.625" />
+        <EntityTypeShape EntityType="SysManageModel.EmployeeDesignation" Width="1.5" PointX="6" PointY="2.5" />
+        <EntityTypeShape EntityType="SysManageModel.CompanyProfile" Width="1.5" PointX="12.75" PointY="0.5" />
+        <EntityTypeShape EntityType="SysManageModel.TableType" Width="1.5" PointX="14.375" PointY="0.5" />
+        <EntityTypeShape EntityType="SysManageModel.signature" Width="1.5" PointX="12.75" PointY="3.5" />
+        <EntityTypeShape EntityType="SysManageModel.UserTbl" Width="1.5" PointX="0.875" PointY="8" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

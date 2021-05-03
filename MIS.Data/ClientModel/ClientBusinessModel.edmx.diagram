@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e22b59ba3900461ba6bc3e5d8113483b" Name="Diagram1" ZoomLevel="90">
+        <EntityTypeShape EntityType="TravelTechModel.Country" Width="1.5" PointX="3.75" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.Destination" Width="1.5" PointX="0.5" PointY="3.625" />
+        <EntityTypeShape EntityType="TravelTechModel.PaymentInfo" Width="1.5" PointX="8.375" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.PaymentType" Width="1.5" PointX="8.375" PointY="4.25" />
+        <EntityTypeShape EntityType="TravelTechModel.Currency" Width="1.5" PointX="3.75" PointY="3.125" />
+        <EntityTypeShape EntityType="TravelTechModel.Customer" Width="1.5" PointX="2.125" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.Provider" Width="1.5" PointX="6.875" PointY="2.75" />
+        <EntityTypeShape EntityType="TravelTechModel.TravelAirline" Width="1.5" PointX="5.25" PointY="4" />
+        <EntityTypeShape EntityType="TravelTechModel.CardMaster" Width="1.5" PointX="9.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TravelTechModel.CardType" Width="1.5" PointX="3.75" PointY="5.375" />
+        <EntityTypeShape EntityType="TravelTechModel.TopUpType" Width="1.5" PointX="9.875" PointY="4" />
+        <EntityTypeShape EntityType="TravelTechModel.CustomerType" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="TravelTechModel.FK_Customer_CustomerType" />
+        <EntityTypeShape EntityType="TravelTechModel.VisaType" Width="1.5" PointX="12.875" PointY="8.125" />
+        <EntityTypeShape EntityType="TravelTechModel.CurrencyConversationHistory" Width="1.5" PointX="14.375" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.SeatType" Width="1.5" PointX="14.375" PointY="3.875" />
+        <EntityTypeShape EntityType="TravelTechModel.City" Width="1.5" PointX="6.875" PointY="6.125" />
+        <EntityTypeShape EntityType="TravelTechModel.HotelType" Width="1.5" PointX="9.875" PointY="6.625" />
+        <EntityTypeShape EntityType="TravelTechModel.RoomType" Width="1.5" PointX="8.375" PointY="6.75" />
+        <EntityTypeShape EntityType="TravelTechModel.Bank" Width="1.5" PointX="0.5" PointY="10.375" />
+        <EntityTypeShape EntityType="TravelTechModel.ClientAdvancePayment" PointX="9.875" PointY="9.25" Width="1.5" />
+        <EntityTypeShape EntityType="TravelTechModel.HolidayPackageDetail" Width="1.5" PointX="12.875" PointY="5.75" />
+        <EntityTypeShape EntityType="TravelTechModel.HolidayPackageMaster" Width="1.5" PointX="12.875" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.PackageDetail" Width="1.5" PointX="6.875" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.PackageMaster" Width="1.5" PointX="5.25" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.ProductService" Width="1.5" PointX="2.125" PointY="5" />
+        <EntityTypeShape EntityType="TravelTechModel.MRMaster" Width="1.5" PointX="5.25" PointY="7.375" />     
+        <EntityTypeShape EntityType="TravelTechModel.TopUp" Width="1.5" PointX="0.5" PointY="6.375" />
+        <EntityTypeShape EntityType="TravelTechModel.AirTicketDetail1" Width="1.5" PointX="18.75" PointY="6.75" />
+        <EntityTypeShape EntityType="TravelTechModel.AirTicketMaster1" Width="1.5" PointX="17" PointY="6.875" />
+        <EntityTypeShape EntityType="TravelTechModel.OnlineRegDetail" Width="1.5" PointX="15.875" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.OnlineRegMaster" Width="1.5" PointX="17.375" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.AirTicketDetail" Width="1.5" PointX="15.875" PointY="4.75" />
+        <EntityTypeShape EntityType="TravelTechModel.Report" Width="1.5" PointX="0.5" PointY="12.875" />
+        <EntityTypeShape EntityType="TravelTechModel.VisaDetail" Width="1.5" PointX="12.875" PointY="10.625" />
+        <EntityTypeShape EntityType="TravelTechModel.VisaMaster" Width="1.5" PointX="11.375" PointY="9.875" />
+        <EntityTypeShape EntityType="TravelTechModel.AirTicketMaster" Width="1.5" PointX="14.375" PointY="6.375" />
+        <EntityTypeShape EntityType="TravelTechModel.HotelBookMaster" Width="1.5" PointX="11.375" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelTechModel.GroupTourMaster" Width="1.5" PointX="8.375" PointY="9.25" />
+        <EntityTypeShape EntityType="TravelTechModel.GroupTourCustomer" Width="1.5" PointX="3.75" PointY="10.875" />
+        <EntityTypeShape EntityType="TravelTechModel.GroupTourMember" Width="1.5" PointX="5.25" PointY="10.625" />
+        <EntityTypeShape EntityType="TravelTechModel.HotelBookDetail" Width="1.5" PointX="11.375" PointY="4.375" />
+        <EntityTypeShape EntityType="TravelTechModel.GroupTourDetails" Width="1.5" PointX="6.875" PointY="8.875" />
+        <EntityTypeShape EntityType="TravelTechModel.MRInvoiceDetail" Width="1.5" PointX="3.75" PointY="7.625" />
+        <EntityTypeShape EntityType="TravelTechModel.MRPaymentDetails" Width="1.5" PointX="2.125" PointY="8.125" /> 
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B12560D1-4615-4E40-9FD4-0D944866FE4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MIS.Data</RootNamespace>
+    <AssemblyName>MIS.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientModel\AirTicketDetail.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\AirTicketMaster.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\Bank.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\CardMaster.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\CardType.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\City.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\ClientAdvancePayment.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\ClientBusinessModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientBusinessModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\ClientBusinessModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\ClientBusinessModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientBusinessModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\Country.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\Currency.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\CurrencyConversationHistory.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\Customer.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\CustomerType.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\Destination.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\GroupTourCustomer.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\GroupTourDetails.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\GroupTourMaster.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\GroupTourMember.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\HolidayPackageDetail.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\HolidayPackageMaster.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\HotelBookDetail.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\HotelBookMaster.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\HotelType.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\MRInvoiceDetail.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\MRMaster.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\MRPaymentDetails.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\OnlineRegDetail.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\OnlineRegMaster.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\PackageDetail.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\PackageMaster.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\PaymentInfo.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\PaymentType.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\ProductService.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\Provider.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\Report.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\RoomType.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\SeatType.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\TopUp.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\TopUpType.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\TravelAirline.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\VisaDetail.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\VisaMaster.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModel\VisaType.cs">
+      <DependentUpon>ClientBusinessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IGenericRepository.cs" />
+    <Compile Include="Repositories\MultipleResultSets.cs" />
+    <Compile Include="Repositories\BusinessManageGenericRepository.cs" />
+    <Compile Include="Repositories\SysManageGenericRepository.cs" />
+    <Compile Include="SysModels\APIRequestLog.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\Application.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\BrowsingLog.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\CompanyProfile.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\Employee.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\EmployeeDepartment.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\EmployeeDesignation.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\EmployeeLocation.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\EmployeeStatusTbl.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\EmployeeType.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\ErrorLog.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\Menu.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\Role.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\RoleAcessTbl.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\signature.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\SysModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SysModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\SysModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\SysModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SysModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\TableType.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\UserAccessTbl.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\UserAccessType.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysModels\UserTbl.cs">
+      <DependentUpon>SysModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SysModels\SysModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SysModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="App.Config" />
+    <EntityDeploy Include="ClientModel\ClientBusinessModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ClientBusinessModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ClientModel\ClientBusinessModel.edmx.diagram">
+      <DependentUpon>ClientBusinessModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="SysModels\SysModel.edmx.diagram">
+      <DependentUpon>SysModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientModel\ClientBusinessModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClientBusinessModel.edmx</DependentUpon>
+      <LastGenOutput>ClientBusinessModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ClientModel\ClientBusinessModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClientBusinessModel.edmx</DependentUpon>
+      <LastGenOutput>ClientBusinessModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="SysModels\SysModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SysModel.Context.cs</LastGenOutput>
+      <DependentUpon>SysModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="SysModels\SysModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SysModel.edmx</DependentUpon>
+      <LastGenOutput>SysModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
