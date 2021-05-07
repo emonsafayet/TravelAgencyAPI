@@ -580,6 +580,22 @@ namespace MIS.APIMVC.MasterEntryController
             }
 
         }
+        //GET Report Customer List
+        [HttpGet]
+        [Route("~/api/client/business/travel/report/customer/list")]
+        public HttpResponseMessage getReportCustomerList()
+        {
+            try
+            {
+                return MISResponse.Return(transactionCommonService.getReportCustomerList(), transactionCommonService.Error, Request);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
 
 
         //GET Advance Payment Not Clearance On Cheque

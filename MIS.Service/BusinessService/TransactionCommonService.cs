@@ -1046,6 +1046,16 @@ namespace MIS.BusinessService.BusinessService
             }
             catch (Exception ex) { Error = ex; return null; }
         }
+        public List<MrCustomerDTO> getReportCustomerList()
+        {
+            try
+            {
+                List<MrCustomerDTO> customer = new BusinessManageGenericRepository<MrCustomerDTO>().FindUsingSP("getCustomerListFORSTATEMENT").ToList();
+                return customer;
+
+            }
+            catch (Exception ex) { Error = ex; return null; }
+        }
 
         //GET Advance Payment List Only Cheque AND Not Cheque Clear Data
         public List<AdvancePaymentClearanceDTO> getAdvancePaymentNotClearanceList()
