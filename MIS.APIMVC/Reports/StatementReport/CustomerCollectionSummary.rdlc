@@ -323,7 +323,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Ageof Invoice</Value>
+                                                    <Value>Age of Invoice</Value>
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -353,7 +353,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Invoice Amount</Value>
+                                                    <Value>Invoice Amt.</Value>
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -383,7 +383,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Ageof Invoice</Value>
+                                                    <Value>Paid Amt.</Value>
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
