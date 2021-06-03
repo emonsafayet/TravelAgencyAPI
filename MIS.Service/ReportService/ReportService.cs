@@ -83,14 +83,27 @@ namespace MIS.BusinessService.ReportService
             }
             catch (Exception ex) { Error = ex; return null; }
         }
-        public List<rptGetCustomerStatement> GetCustomerStatement(string code)
+        public List<rptCustomerStatement> GetCustomerStatement(string code)
         {
             try
             {
                 if (code == null) code = "";
-                List<rptGetCustomerStatement> list = new BusinessManageGenericRepository<rptGetCustomerStatement>().
+                List<rptCustomerStatement> list = new BusinessManageGenericRepository<rptCustomerStatement>().
                     FindUsingSP("rptGetCustomerStatement @CustomerCode",
             new SqlParameter("@CustomerCode", code)).OrderByDescending(i => i.TransactionDate).ToList();
+                return list;
+            }
+            catch (Exception ex) { Error = ex; return null; }
+        }
+        public List<rptGetCustomerwiseColletionSummaryDto> GetCustomerCollectionSummaryStatement(string fromDate, string toDate, string code)
+        {
+            try
+            {
+                if (code == null) code = "";
+                List<rptGetCustomerwiseColletionSummaryDto> list = new BusinessManageGenericRepository<rptGetCustomerwiseColletionSummaryDto>().
+                    FindUsingSP("rptGetCustomerwiseColletionSummary @FromDate,@ToDate,@CustomerCode",
+            new SqlParameter("@FromDate", fromDate),   new SqlParameter("@ToDate", toDate),  new SqlParameter("@CustomerCode", code)
+            ).OrderByDescending(i => i.TransactionDate).ToList();
                 return list;
             }
             catch (Exception ex) { Error = ex; return null; }

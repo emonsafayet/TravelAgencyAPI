@@ -423,6 +423,7 @@
     <EmbeddedResource Include="Reports\ServicerReport\DueReport.rdlc" />
     <EmbeddedResource Include="Reports\ServicerReport\ServiceDetailsReportByServiceCode.rdlc" />
     <EmbeddedResource Include="Reports\StatementReport\CreditCardStatement.rdlc" />
+    <EmbeddedResource Include="Reports\StatementReport\CustomerCollectionSummary.rdlc" />
     <EmbeddedResource Include="Reports\StatementReport\CustomerDueStatement.rdlc" />
     <EmbeddedResource Include="Reports\StatementReport\CustomerStatement.rdlc" />
     <EmbeddedResource Include="Reports\StatementReport\ProviderStatement.rdlc" />

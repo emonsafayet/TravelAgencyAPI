@@ -26,6 +26,8 @@ namespace MIS.Dto.BusinessDTO
         public string CompanyName { get; set; }
         public string PaymentTypeName { get; set; }
         public string BankName { get; set; }
+        public Nullable<decimal> UnAdjustedAmount { get; set; }
+        public Nullable<decimal> AdjustedAmount { get; set; }
         public Boolean isActive { get; set; }
 
     }

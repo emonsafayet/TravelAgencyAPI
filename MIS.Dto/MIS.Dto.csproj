@@ -51,7 +51,7 @@
     <Compile Include="Report\AirTicketRegDTO.cs" />
     <Compile Include="Report\ReportParamDto.cs" />
     <Compile Include="Report\ReportParams.cs" />
-    <Compile Include="Report\rptGetCustomerStatement.cs" />
+    <Compile Include="Report\CustomerStatement.cs" />
     <Compile Include="Report\RPTgetProviderStatementDTO.cs" />
     <Compile Include="Report\rptMoneyReceiptDTO.cs" />
     <Compile Include="Report\rptOnlineRegistrationDTO.cs" />

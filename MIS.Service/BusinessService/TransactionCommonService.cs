@@ -855,7 +855,8 @@ namespace MIS.BusinessService.BusinessService
         {
             try
             {
-                return new BusinessManageGenericRepository<AdvancePaymentDTO>().FindUsingSP("getAdvancePaymentList").ToList();
+                List<AdvancePaymentDTO> lists = new BusinessManageGenericRepository<AdvancePaymentDTO>().FindUsingSP("getAdvancePaymentList").ToList();
+                return lists;
             }
             catch (Exception ex) { Error = ex; return null; }
         }

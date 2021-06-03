@@ -99,6 +99,14 @@ namespace MIS.APIMVC.ReportControllers
                 if (obj == null) return null; 
                 parameters.Add(new ReportParameter("CustomerCode", "CustomerCode Value"));
             }
+            else if (reqItems.ReportName == "Customer Collection Summary")
+            {
+                obj = reportService.GetCustomerCollectionSummaryStatement(reqItems.FromDate, reqItems.ToDate,reqItems.Code);
+                if (obj == null) return null;
+                parameters.Add(new ReportParameter("CustomerCode", "CustomerCode Value"));
+                parameters.Add(new ReportParameter("FromDate", "FromDate Value"));
+                parameters.Add(new ReportParameter("ToDate", "ToDate Value"));
+            }
             else if (reqItems.ReportName == "Provider Statement")
             {
                 obj = reportService.GetProviderSatement(reqItems.FromDate, reqItems.ToDate, reqItems.Code);
@@ -288,6 +296,9 @@ namespace MIS.APIMVC.ReportControllers
                 reportName = "ProviderStatement";
             else if (ReportName == "Cutomser Statement")
                 reportName = "CustomerStatement";
+            else if (ReportName == "Customer Collection Summary")
+                reportName = "CustomerCollectionSummary";
+            
             else
                 reportName = "";
             return reportName;
@@ -303,6 +314,8 @@ namespace MIS.APIMVC.ReportControllers
                 dataSetName = "ProviderStatementDataSet";
             else if (ReportName == "Cutomser Statement")
                 dataSetName = "CustomerStatementDataSet";
+            else if (ReportName == "Customer Collection Summary")
+                dataSetName = "CustomerCollectionSummaryDataSet";
             else
                 dataSetName = "";
             return dataSetName;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MIS.Dto.Report
 { 
-    public class rptGetCustomerStatement
+    public class rptCustomerStatement
     {
         public string CustomerCode { get; set; }
 
@@ -23,5 +23,24 @@ namespace MIS.Dto.Report
         public Nullable<decimal> AdvanceAmount { get; set; }
 
     }
+    public class rptGetCustomerwiseColletionSummaryDto  
+    {
+        public string CustomerCode { get; set; }
+
+        public string CustomerName { get; set; }
+        public string ReceiptCode { get; set; }
+        public Nullable<DateTime> ReceivedDate { get; set; }
+        public string ServiceCode { get; set; }
+        public string ServiceName { get; set; }
+
+        public string InvoiceID { get; set; }
+        public Nullable<DateTime> TransactionDate { get; set; }
+        public Nullable<int> AgeofInvoice { get; set; }
+        public Nullable<decimal> InvoiceAmount { get; set; }
+        public Nullable<decimal> PaidAmount { get; set; }
+
+    }
+
+
 
 }
