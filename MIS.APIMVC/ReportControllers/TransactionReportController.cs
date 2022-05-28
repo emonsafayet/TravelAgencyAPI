@@ -115,6 +115,22 @@ namespace MIS.APIMVC.ReportControllers
                 parameters.Add(new ReportParameter("ToDate", "ToDate Value"));
                 parameters.Add(new ReportParameter("ProviderCode", "ProviderCode Value"));
             }
+            else if (reqItems.ReportName == "Income Flow Summary")
+            {
+                obj = reportService.GetIncomeFlowSummary(reqItems.FromDate, reqItems.ToDate, reqItems.Code);
+                if (obj == null) return null;
+                parameters.Add(new ReportParameter("FromDate", "FromDate Value"));
+                parameters.Add(new ReportParameter("ToDate", "ToDate Value"));
+                parameters.Add(new ReportParameter("ProviderCode", "ProviderCode Value"));
+            }
+            else if (reqItems.ReportName == "Income Flow Details")
+            {
+                obj = reportService.GetIncomeFlowDetails(reqItems.FromDate, reqItems.ToDate, reqItems.Code);
+                if (obj == null) return null;
+                parameters.Add(new ReportParameter("FromDate", "FromDate Value"));
+                parameters.Add(new ReportParameter("ToDate", "ToDate Value"));
+                parameters.Add(new ReportParameter("ProviderCode", "ProviderCode Value"));
+            }
             printreportviewer(dataSet, rptFileName);
             return File(bytes, "application/pdf");
         }       
@@ -298,7 +314,10 @@ namespace MIS.APIMVC.ReportControllers
                 reportName = "CustomerStatement";
             else if (ReportName == "Customer Collection Summary")
                 reportName = "CustomerCollectionSummary";
-            
+            else if (ReportName == "Income Flow Summary")
+                reportName = "IncomeFlowSummary";
+            else if (ReportName == "Income Flow Details")
+                reportName = "IncomeFlowDetails";
             else
                 reportName = "";
             return reportName;
@@ -316,6 +335,10 @@ namespace MIS.APIMVC.ReportControllers
                 dataSetName = "CustomerStatementDataSet";
             else if (ReportName == "Customer Collection Summary")
                 dataSetName = "CustomerCollectionSummaryDataSet";
+            else if (ReportName == "Income Flow Summary")
+                dataSetName = "rptIncomeFlowSummaryDataSet";
+            else if (ReportName == "Income Flow Details")
+                dataSetName = "rptGetIncomeFlowDetailsDataSet";
             else
                 dataSetName = "";
             return dataSetName;

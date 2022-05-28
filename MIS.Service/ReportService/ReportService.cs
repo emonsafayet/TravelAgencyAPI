@@ -102,7 +102,7 @@ namespace MIS.BusinessService.ReportService
                 if (code == null) code = "";
                 List<rptGetCustomerwiseColletionSummaryDto> list = new BusinessManageGenericRepository<rptGetCustomerwiseColletionSummaryDto>().
                     FindUsingSP("rptGetCustomerwiseColletionSummary @FromDate,@ToDate,@CustomerCode",
-            new SqlParameter("@FromDate", fromDate),   new SqlParameter("@ToDate", toDate),  new SqlParameter("@CustomerCode", code)
+            new SqlParameter("@FromDate", fromDate), new SqlParameter("@ToDate", toDate), new SqlParameter("@CustomerCode", code)
             ).OrderByDescending(i => i.TransactionDate).ToList();
                 return list;
             }
@@ -243,5 +243,36 @@ namespace MIS.BusinessService.ReportService
         //End Group Tour Informations
 
 
+        // Start Income Flow 
+
+
+        public List<rptIncomeFlowSummary> GetIncomeFlowSummary(string fromDate, string toDate, string ProviderCode)
+        {
+            try
+            {
+                if (ProviderCode == null) ProviderCode = "";
+                return new BusinessManageGenericRepository<rptIncomeFlowSummary>().FindUsingSP("rptGetIncomeFlowSummary @FromDate,@ToDate,@ProviderCode",
+                                                                                    new SqlParameter("@FromDate", fromDate),
+                                                                                    new SqlParameter("@ToDate", toDate),
+                                                                                    new SqlParameter("@ProviderCode", ProviderCode));
+            }
+            catch (Exception ex) { Error = ex; return null; }
+        }
+
+        public List<rptIncomeFlowDetails> GetIncomeFlowDetails(string fromDate, string toDate, string ProviderCode)
+        {
+            try
+            {
+                if (ProviderCode == null) ProviderCode = "";
+                return new BusinessManageGenericRepository<rptIncomeFlowDetails>().FindUsingSP("rptGetIncomeFlowDetails @FromDate,@ToDate,@ProviderCode",
+                                                                                    new SqlParameter("@FromDate", fromDate),
+                                                                                    new SqlParameter("@ToDate", toDate),
+                                                                                    new SqlParameter("@ProviderCode", ProviderCode));
+            }
+            catch (Exception ex) { Error = ex; return null; }
+        }
+
+
+        //End Income Flow
     }
 }
