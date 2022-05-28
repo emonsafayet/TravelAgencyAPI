@@ -426,6 +426,8 @@
     <EmbeddedResource Include="Reports\StatementReport\CustomerCollectionSummary.rdlc" />
     <EmbeddedResource Include="Reports\StatementReport\CustomerDueStatement.rdlc" />
     <EmbeddedResource Include="Reports\StatementReport\CustomerStatement.rdlc" />
+    <EmbeddedResource Include="Reports\StatementReport\IncomeFlowDetails.rdlc" />
+    <EmbeddedResource Include="Reports\StatementReport\IncomeFlowSummary.rdlc" />
     <EmbeddedResource Include="Reports\StatementReport\ProviderStatement.rdlc" />
     <EmbeddedResource Include="Reports\TransactionReport\AirticketReg.rdlc" />
     <EmbeddedResource Include="Reports\TransactionReport\GroupTour.rdlc" />
