@@ -121,7 +121,7 @@ namespace MIS.APIMVC.ReportControllers
                 if (obj == null) return null;
                 parameters.Add(new ReportParameter("FromDate", "FromDate Value"));
                 parameters.Add(new ReportParameter("ToDate", "ToDate Value"));
-                parameters.Add(new ReportParameter("ProviderCode", "ProviderCode Value"));
+                parameters.Add(new ReportParameter("ServiceCode", "ServiceCode Value"));
             }
             else if (reqItems.ReportName == "Income Flow Details")
             {
@@ -129,7 +129,7 @@ namespace MIS.APIMVC.ReportControllers
                 if (obj == null) return null;
                 parameters.Add(new ReportParameter("FromDate", "FromDate Value"));
                 parameters.Add(new ReportParameter("ToDate", "ToDate Value"));
-                parameters.Add(new ReportParameter("ProviderCode", "ProviderCode Value"));
+                parameters.Add(new ReportParameter("ServiceCode", "ServiceCode Value"));
             }
             printreportviewer(dataSet, rptFileName);
             return File(bytes, "application/pdf");
