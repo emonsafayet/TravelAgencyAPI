@@ -314,7 +314,7 @@ namespace MIS.BusinessService.BusinessService
                 {
                     //MASTER UPDATE
                     newItem.UpdatedOn = DateTime.Now;
-                    VisaDetail ExistingMasterMapObj = new BusinessManageGenericRepository<VisaDetail>().Find(i => i.DetailID == newItem.ID).FirstOrDefault();
+                    VisaDetail ExistingMasterMapObj = new BusinessManageGenericRepository<VisaDetail>().Find(i => i.TransactionCode == dto.TransactionCode).FirstOrDefault();
                     newItem.CreatedOn = ExistingMasterMapObj.CreatedOn;
 
                     newItem = new BusinessManageGenericRepository<VisaMaster>().Update(newItem, i => i.ID == newItem.ID);

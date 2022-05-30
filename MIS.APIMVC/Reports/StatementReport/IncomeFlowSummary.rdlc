@@ -673,6 +673,7 @@
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -706,6 +707,7 @@
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -739,6 +741,7 @@
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -772,6 +775,7 @@
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -805,7 +809,7 @@
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
-                                    <Format>0.00;(0.00);'-'</Format>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -839,6 +843,7 @@
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -872,6 +877,7 @@
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -905,6 +911,7 @@
                                   <Style>
                                     <FontFamily>times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1066,6 +1073,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1099,6 +1107,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1132,6 +1141,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1165,6 +1175,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1198,7 +1209,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
-                                    <Format>0.00;(0.00);'-'</Format>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1232,6 +1243,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1265,6 +1277,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1298,6 +1311,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1458,6 +1472,7 @@
                                   <Value>=Sum(Fields!Comission.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1490,6 +1505,7 @@
                                   <Value>=Sum(Fields!ServiceChargeValue.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1522,6 +1538,7 @@
                                   <Value>=Sum(Fields!DiscountValue.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1554,6 +1571,7 @@
                                   <Value>=Sum(Fields!ChangePenalty.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1586,7 +1604,7 @@
                                   <Value>=Sum(Fields!CancellationCharge.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Format>0.00;(0.00);'-'</Format>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1619,6 +1637,7 @@
                                   <Value>=Sum(Fields!ProviderPenalty.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1651,6 +1670,7 @@
                                   <Value>=Sum(Fields!ChangeValueGain.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1683,6 +1703,7 @@
                                   <Value>=Sum(Fields!GrossIncome.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0);'-'</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1859,7 +1880,7 @@
             <Top>0.14111cm</Top>
             <Left>0.38503cm</Left>
             <Height>2.98209cm</Height>
-            <Width>28.76737cm</Width>
+            <Width>28.76742cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
